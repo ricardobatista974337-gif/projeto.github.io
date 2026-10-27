@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Linha Industrial | Rolamentos</title>
+<style>
+:root{color-scheme:dark;--bg:#0b1220;--panel:#152238;--line:#344760;--cyan:#39d5f5;--green:#54e6a2;--amber:#ffc46b}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:#edf5ff;font:15px system-ui,Segoe UI,sans-serif}
+header{padding:22px 30px;background:#111e31;border-bottom:1px solid var(--line)}h1{margin:0;font-size:25px}header p{margin:7px 0 0;color:#a9bdd5}
+main{max-width:1400px;margin:auto;padding:20px}.toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:15px}
+button{border:1px solid #41617c;background:#213d5a;color:white;border-radius:9px;padding:10px 16px;cursor:pointer;font-weight:650}button:hover{background:#2b5276}.primary{background:#087e96}
+.status{margin-left:auto;color:var(--green)}.layout{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:16px}
+.stage,.panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px}
+svg{display:block;width:100%;height:auto;background:#0d192a;border-radius:10px}svg text{font:14px system-ui;fill:#dbeaff}.belt{fill:#2b3e54;stroke:#7590a8;stroke-width:2}.roller{fill:#6b8197}
+.part{fill:#53d5f4;stroke:#c6f6ff;stroke-width:2}.matrix{fill:#b08cfa;stroke:#e1d3ff;stroke-width:2}.boxshape{fill:#bd8750;stroke:#f4c38b;stroke-width:2}
+.panel h2{font-size:18px;margin:4px 0 14px}.metric{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--line)}.metric strong{color:var(--cyan);font-size:20px}
+.legend{display:flex;flex-wrap:wrap;gap:15px;color:#b9cce0;margin-top:12px}.dot{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:6px}
+.note{color:#aabed3;font-size:13px;line-height:1.5}.event{font-size:13px;padding:8px 0;border-bottom:1px solid #30445c;color:#bfd0e4}
+@media(max-width:900px){.layout{grid-template-columns:1fr}.status{margin-left:0}}
+</style>
+</head>
+<body>
+<header><h1>LINHA INDUSTRIAL · Embalamento de peças de rolamentos</h1><p>Simulação visual de uma célula automatizada com 1 braço robótico, 3 esteiras e abastecimento por AMR.</p></header>
+<main>
+<div class="toolbar"><button class="primary" id="start">▶ Iniciar</button><button id="pause">⏸ Pausar</button><button id="reset">↺ Reiniciar</button><label>Velocidade <input id="speed" type="range" min="1" max="4" value="2"></label><span class="status" id="status">● Pronto</span></div>
+<div class="layout"><section class="stage">
+<svg viewBox="0 0 1120 700" role="img" aria-label="Diagrama animado da linha industrial com alimentador de peças, três esteiras, braço robótico e dois AMR">
+<defs><pattern id="floor" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#1c2e42" stroke-width="1"/></pattern></defs>
+<rect width="1120" height="700" fill="url(#floor)"/>
+<text x="38" y="42" font-size="19" font-weight="bold">PLANTA DA CÉLULA AUTOMATIZADA</text>
+<!-- alimentador -->
+<g><rect x="45" y="85" width="180" height="140" rx="12" fill="#243c53" stroke="#66d9f2" stroke-width="3"/><text x="62" y="112">Estrutura plástica</text><text x="62" y="132" font-size="12">Peças de rolamentos</text><path d="M80 150H190L165 205H105Z" fill="#365b73" stroke="#81a8bf"/><circle cx="116" cy="157" r="10" class="part"/><circle cx="146" cy="157" r="10" class="part"/><circle cx="132" cy="184" r="10" class="part"/><path d="M135 208V260" stroke="#39d5f5" stroke-width="3" stroke-dasharray="6 5"/><text x="44" y="248" font-size="12">Queda direta ↓</text></g>
+<!-- conveyors -->
+<g><rect class="belt" x="35" y="270" width="700" height="86" rx="14"/><rect class="belt" x="35" y="420" width="700" height="86" rx="14"/><rect class="belt" x="35" y="570" width="1010" height="86" rx="14"/>
+<g id="rollers"></g><text x="45" y="290">ESTEIRA 1 · PEÇAS PLÁSTICAS →</text><text x="45" y="440">ESTEIRA 2 · MATRIZES PROTETORAS →</text><text x="45" y="590">ESTEIRA 3 · CAIXAS PARA EXPEDIÇÃO →</text></g>
+<!-- AMRs -->
+<g id="amrMatrix"><rect x="65" y="375" width="125" height="37" rx="12" fill="#d0a34b" stroke="#ffe1a2" stroke-width="3"/><circle cx="88" cy="413" r="7" fill="#526478"/><circle cx="165" cy="413" r="7" fill="#526478"/><text x="83" y="398" fill="#142237" font-weight="bold">AMR · MATRIZ</text></g>
+<g id="amrBox"><rect x="65" y="525" width="125" height="37" rx="12" fill="#d0a34b" stroke="#ffe1a2" stroke-width="3"/><circle cx="88" cy="563" r="7" fill="#526478"/><circle cx="165" cy="563" r="7" fill="#526478"/><text x="88" y="548" fill="#142237" font-weight="bold">AMR · CAIXA</text></g>
+<!-- robotic arm -->
+<g><circle cx="840" cy="387" r="68" fill="#203b50" stroke="#5c90ae" stroke-width="3"/><circle cx="840" cy="387" r="40" fill="#344f68"/><text x="770" y="478">BRAÇO ROBÓTICO</text><text x="776" y="497" font-size="12">Montagem e embalagem</text><g id="arm"><path id="armA" d="M840 387L900 305" stroke="#f6b64b" stroke-width="23" stroke-linecap="round"/><path id="armB" d="M900 305L920 290" stroke="#ffdb8c" stroke-width="17" stroke-linecap="round"/><circle id="joint" cx="900" cy="305" r="15" fill="#ffe0a4"/><circle id="grip" cx="920" cy="290" r="9" fill="#ffecba"/></g></g>
+<g id="objects"></g>
+<text x="770" y="95" fill="#a9bdd5">Fluxo: peças + matrizes → proteção → caixa → expedição</text>
+<text x="790" y="680" fill="#9ab0c8" font-size="12">Simulação conceptual · sem escala física</text>
+</svg>
+<div class="legend"><span><i class="dot" style="background:#53d5f4"></i>Peça plástica</span><span><i class="dot" style="background:#b08cfa"></i>Matriz</span><span><i class="dot" style="background:#bd8750"></i>Caixa</span><span><i class="dot" style="background:#d0a34b"></i>AMR</span></div>
+<p class="note">As peças caem diretamente da estrutura para a primeira esteira. Os AMR abastecem as matrizes e as caixas nas respetivas esteiras. O braço robótico coloca a peça na matriz e a matriz protegida na caixa. A caixa segue pela terceira esteira para expedição.</p>
+</section><aside class="panel"><h2>Monitorização</h2><div class="metric">Peças produzidas <strong id="parts">0</strong></div><div class="metric">Matrizes utilizadas <strong id="matrices">0</strong></div><div class="metric">Caixas expedidas <strong id="boxes">0</strong></div><div class="metric">Ciclos concluídos <strong id="cycles">0</strong></div><h2 style="margin-top:24px">Atividade</h2><div id="events" aria-live="polite"><div class="event">Sistema preparado.</div></div></aside></div>
+</main>
+<script>
+const $=id=>document.getElementById(id),NS='http://www.w3.org/2000/svg';
+let running=false,elapsed=0,last=0,cycles=0,parts=0,matrices=0,boxes=0,items=[];
+function element(tag,attrs,parent){let e=document.createElementNS(NS,tag);for(let k in attrs)e.setAttribute(k,attrs[k]);parent.appendChild(e);return e}
+for(let y of [270,420,570])for(let x=65;x<(y===570?1040:730);x+=48)element('circle',{cx:x,cy:y+73,r:8,class:'roller'},$('rollers'));
+function log(t){let d=document.createElement('div');d.className='event';d.textContent=t;$('events').prepend(d);while($('events').children.length>6)$('events').lastChild.remove()}
+function update(){for(let k of ['parts','matrices','boxes','cycles'])$(k).textContent=window[k]??eval(k)}
+function spawn(type,x,y){items.push({type,x,y,progress:0})}
+function draw(){
+const group=$('objects');group.replaceChildren();
+for(let it of items){if(it.type==='part'){element('circle',{cx:it.x,cy:it.y,r:15,class:'part'},group);element('circle',{cx:it.x,cy:it.y,r:6,fill:'#0d192a'},group)}
+else if(it.type==='matrix'){element('rect',{x:it.x-23,y:it.y-17,width:46,height:34,rx:7,class:'matrix'},group);element('circle',{cx:it.x,cy:it.y,r:10,fill:'#25324b'},group)}
+else{element('rect',{x:it.x-31,y:it.y-22,width:62,height:44,rx:4,class:'boxshape'},group);element('path',{d:`M${it.x-31} ${it.y-22}L${it.x} ${it.y-6}L${it.x+31} ${it.y-22}`,stroke:'#f7d19e',fill:'none','stroke-width':2},group)}}
+}
+function frame(now){if(!last)last=now;let dt=Math.min((now-last)/1000,.06);last=now;if(running){elapsed+=dt*Number($('speed').value);let phase=elapsed%8;
+if(phase<.08&&!frame.spawned){spawn('part',135,312);spawn('matrix',140,462);spawn('box',140,612);parts++;frame.spawned=true;log('Peça libertada; AMR abasteceram matrizes e caixas.')}
+if(phase>.2)frame.spawned=false;
+for(let it of items){let target=it.type==='box'?865:it.type==='matrix'?660:680;it.x=Math.min(target,it.x+dt*(it.type==='box'?110:105))}
+if(phase>5.5&&phase<5.7&&!frame.assembled){matrices++;frame.assembled=true;log('Braço robótico colocou a peça na matriz e na caixa.')}
+if(phase>7.7&&!frame.finished){boxes++;cycles++;frame.finished=true;items=[];log('Caixa protegida expedida. Ciclo '+cycles+' concluído.')}
+if(phase<.2){frame.finished=false;frame.assembled=false}
+let a=phase<2?-.8:phase<4?-.1:phase<6?1.2:2.1;
+let x=840+92*Math.cos(a),y=387+92*Math.sin(a),gx=x+43*Math.cos(a+.4),gy=y+43*Math.sin(a+.4);
+$('armA').setAttribute('d',`M840 387L${x} ${y}`);$('armB').setAttribute('d',`M${x} ${y}L${gx} ${gy}`);$('joint').setAttribute('cx',x);$('joint').setAttribute('cy',y);$('grip').setAttribute('cx',gx);$('grip').setAttribute('cy',gy);
+$('amrMatrix').setAttribute('transform',`translate(${Math.sin(elapsed*1.3)*22} 0)`);$('amrBox').setAttribute('transform',`translate(${Math.sin(elapsed*1.1+1)*22} 0)`);update();draw();
+}requestAnimationFrame(frame)}
+$('start').onclick=()=>{running=true;$('status').textContent='● Em funcionamento';log('Linha iniciada.')};
+$('pause').onclick=()=>{running=false;$('status').textContent='● Pausada';log('Linha pausada.')};
+$('reset').onclick=()=>{running=false;elapsed=0;last=0;cycles=parts=matrices=boxes=0;items=[];frame.spawned=frame.assembled=frame.finished=false;update();draw();$('status').textContent='● Pronto';$('events').replaceChildren();log('Sistema reiniciado.')};
+requestAnimationFrame(frame);
+</script>
+</body></html>
