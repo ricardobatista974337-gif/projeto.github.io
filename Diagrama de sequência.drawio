@@ -1,9 +1,237 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Página-1" id="LQc-Ob3L3i9pza-4XFC7">
-    <mxGraphModel>
+    <mxGraphModel dx="1369" dy="910" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="xuzyZylhnx2wp8w7CgUG-1" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="Relógio RCT" vertex="1">
+          <mxGeometry height="400" width="100" x="100" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="xuzyZylhnx2wp8w7CgUG-2" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=40;" value="Sensor magnético" vertex="1">
+          <mxGeometry height="400" width="100" x="440" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="xuzyZylhnx2wp8w7CgUG-3" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="ESP 32" vertex="1">
+          <mxGeometry height="400" width="100" x="260" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="xuzyZylhnx2wp8w7CgUG-4" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="Fechadura elétrica" vertex="1">
+          <mxGeometry height="400" width="100" x="600" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="xuzyZylhnx2wp8w7CgUG-5" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="309.5" y="230" as="sourcePoint" />
+            <mxPoint x="149.5" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xuzyZylhnx2wp8w7CgUG-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Solicitar hora atual" vertex="1">
+          <mxGeometry height="30" width="110" x="178" y="204" as="geometry" />
+        </mxCell>
+        <mxCell id="xuzyZylhnx2wp8w7CgUG-7" edge="1" parent="1" source="xuzyZylhnx2wp8w7CgUG-1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;defaultLabelBackgroundColor=page;" target="xuzyZylhnx2wp8w7CgUG-3" value="">
+          <mxGeometry relative="1" x="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="229.5" y="267" />
+            </Array>
+            <mxPoint x="350" y="267" as="sourcePoint" />
+            <mxPoint x="270" y="267" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xuzyZylhnx2wp8w7CgUG-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Retorna hora atual" vertex="1">
+          <mxGeometry height="30" width="120" x="170" y="245" as="geometry" />
+        </mxCell>
+        <mxCell id="xuzyZylhnx2wp8w7CgUG-11" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="309.5" y="318" as="sourcePoint" />
+            <mxPoint x="489.5" y="318" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xuzyZylhnx2wp8w7CgUG-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Verificar estado" vertex="1">
+          <mxGeometry height="30" width="90" x="355" y="293" as="geometry" />
+        </mxCell>
+        <mxCell id="xuzyZylhnx2wp8w7CgUG-14" edge="1" parent="1" source="xuzyZylhnx2wp8w7CgUG-2" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;defaultLabelBackgroundColor=page;" target="xuzyZylhnx2wp8w7CgUG-3" value="">
+          <mxGeometry relative="1" x="0.7778" as="geometry">
+            <Array as="points">
+              <mxPoint x="399.5" y="356" />
+            </Array>
+            <mxPoint x="370.5" y="356" as="sourcePoint" />
+            <mxPoint x="290.5" y="356" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xuzyZylhnx2wp8w7CgUG-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Retorna o estado" vertex="1">
+          <mxGeometry height="30" width="110" x="342" y="334" as="geometry" />
+        </mxCell>
+        <mxCell id="xuzyZylhnx2wp8w7CgUG-18" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="309.5" y="413" as="sourcePoint" />
+            <mxPoint x="649.5000000000002" y="413" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xuzyZylhnx2wp8w7CgUG-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Enviar comando de trancar a porta" vertex="1">
+          <mxGeometry height="30" width="210" x="388" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="xuzyZylhnx2wp8w7CgUG-20" edge="1" parent="1" source="xuzyZylhnx2wp8w7CgUG-4" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;defaultLabelBackgroundColor=page;" target="xuzyZylhnx2wp8w7CgUG-3" value="Confirma o comando de que a porta está trancada">
+          <mxGeometry relative="1" x="-0.1206" y="-1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+            <Array as="points">
+              <mxPoint x="479.5" y="465.0000000000002" />
+            </Array>
+            <mxPoint x="481" y="465" as="sourcePoint" />
+            <mxPoint x="401" y="465" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xuzyZylhnx2wp8w7CgUG-21" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 6px;&quot;&gt;[Se hora &amp;gt; 22:00h]&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="310" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="xuzyZylhnx2wp8w7CgUG-22" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 6px;&quot;&gt;[Se porta estiver fechada]&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="82" x="306" y="375" as="geometry" />
+        </mxCell>
+        <mxCell id="xuzyZylhnx2wp8w7CgUG-23" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="Sensor de Luminosidade (BH1750)" vertex="1">
+          <mxGeometry height="410" width="100" x="100" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="xuzyZylhnx2wp8w7CgUG-24" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="ESP 32" vertex="1">
+          <mxGeometry height="410" width="100" x="260" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="xuzyZylhnx2wp8w7CgUG-25" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="Módulo Réle" vertex="1">
+          <mxGeometry height="410" width="100" x="440" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="xuzyZylhnx2wp8w7CgUG-26" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="Lâmpada" vertex="1">
+          <mxGeometry height="410" width="100" x="600" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="xuzyZylhnx2wp8w7CgUG-27" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="310" y="710" as="sourcePoint" />
+            <mxPoint x="150" y="710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xuzyZylhnx2wp8w7CgUG-28" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Solicita nível de luminosidade" vertex="1">
+          <mxGeometry height="30" width="210" x="128" y="685" as="geometry" />
+        </mxCell>
+        <mxCell id="xuzyZylhnx2wp8w7CgUG-29" edge="1" parent="1" source="xuzyZylhnx2wp8w7CgUG-23" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;defaultLabelBackgroundColor=page;" target="xuzyZylhnx2wp8w7CgUG-24" value="">
+          <mxGeometry relative="1" x="0.7344" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="760" />
+            </Array>
+            <mxPoint x="253.75" y="760" as="sourcePoint" />
+            <mxPoint x="173.75" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xuzyZylhnx2wp8w7CgUG-30" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="retorna o nível de luminosidade" vertex="1">
+          <mxGeometry height="30" width="240" x="115" y="735" as="geometry" />
+        </mxCell>
+        <mxCell id="xuzyZylhnx2wp8w7CgUG-32" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="310" y="810" as="sourcePoint" />
+            <mxPoint x="490.0000000000002" y="810" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xuzyZylhnx2wp8w7CgUG-33" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Envia comando para ligar" vertex="1">
+          <mxGeometry height="30" width="150" x="325" y="785" as="geometry" />
+        </mxCell>
+        <mxCell id="xuzyZylhnx2wp8w7CgUG-34" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="489.5000000000002" y="860" as="sourcePoint" />
+            <mxPoint x="649.5000000000002" y="860" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xuzyZylhnx2wp8w7CgUG-35" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Fornece a alimentação" vertex="1">
+          <mxGeometry height="30" width="140" x="500" y="837" as="geometry" />
+        </mxCell>
+        <mxCell id="xuzyZylhnx2wp8w7CgUG-36" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 7px; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;[Luminosidade &amp;lt;40%]&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="140" x="460" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="xuzyZylhnx2wp8w7CgUG-38" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="309.5" y="931.0000000000002" as="sourcePoint" />
+            <mxPoint x="489.5000000000002" y="931.0000000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xuzyZylhnx2wp8w7CgUG-40" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Envia comando para desligar" vertex="1">
+          <mxGeometry height="30" width="180" x="310" y="907" as="geometry" />
+        </mxCell>
+        <mxCell id="xuzyZylhnx2wp8w7CgUG-41" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="490.0000000000002" y="977" as="sourcePoint" />
+            <mxPoint x="650.0000000000002" y="977" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xuzyZylhnx2wp8w7CgUG-42" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Interrompe a alminetação" vertex="1">
+          <mxGeometry height="30" width="140" x="500" y="953" as="geometry" />
+        </mxCell>
+        <mxCell id="xuzyZylhnx2wp8w7CgUG-43" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 7px; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;[Luminosidade &amp;gt;=40%]&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="140" x="458" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="xuzyZylhnx2wp8w7CgUG-44" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="DHT22/BME280" vertex="1">
+          <mxGeometry height="445" width="100" x="960" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="xuzyZylhnx2wp8w7CgUG-45" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="ESP 32" vertex="1">
+          <mxGeometry height="445" width="100" x="1160" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="xuzyZylhnx2wp8w7CgUG-46" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="Aquecimento" vertex="1">
+          <mxGeometry height="445" width="100" x="1360" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="xuzyZylhnx2wp8w7CgUG-47" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="Ar condicionado" vertex="1">
+          <mxGeometry height="445" width="100" x="1560" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="xuzyZylhnx2wp8w7CgUG-48" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1209.5" y="230" as="sourcePoint" />
+            <mxPoint x="1009.5" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xuzyZylhnx2wp8w7CgUG-49" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Solicita temperatura da área" vertex="1">
+          <mxGeometry height="30" width="170" x="1030" y="204" as="geometry" />
+        </mxCell>
+        <mxCell id="xuzyZylhnx2wp8w7CgUG-50" edge="1" parent="1" source="xuzyZylhnx2wp8w7CgUG-44" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;defaultLabelBackgroundColor=page;" target="xuzyZylhnx2wp8w7CgUG-45" value="Retorna a temperatura">
+          <mxGeometry relative="1" x="-0.175" as="geometry">
+            <Array as="points">
+              <mxPoint x="1109.5" y="301" />
+            </Array>
+            <mxPoint x="1070" y="301" as="sourcePoint" />
+            <mxPoint x="990" y="301" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xuzyZylhnx2wp8w7CgUG-51" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1210" y="348.5" as="sourcePoint" />
+            <mxPoint x="1410" y="348.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xuzyZylhnx2wp8w7CgUG-53" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Envia comando para ativação" vertex="1">
+          <mxGeometry height="30" width="180" x="1220" y="323" as="geometry" />
+        </mxCell>
+        <mxCell id="xuzyZylhnx2wp8w7CgUG-54" edge="1" parent="1" source="xuzyZylhnx2wp8w7CgUG-46" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;defaultLabelBackgroundColor=page;" target="xuzyZylhnx2wp8w7CgUG-45" value="Confirma o comando para ativar">
+          <mxGeometry relative="1" x="-0.005" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1310" y="405" />
+            </Array>
+            <mxPoint x="1100.5" y="405" as="sourcePoint" />
+            <mxPoint x="1020.5" y="405" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xuzyZylhnx2wp8w7CgUG-55" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 6px;&quot;&gt;[Se a&amp;nbsp; temperattura é &amp;lt; 19Cº]&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="90" x="1210" y="304" as="geometry" />
+        </mxCell>
+        <mxCell id="xuzyZylhnx2wp8w7CgUG-56" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1210" y="470" as="sourcePoint" />
+            <mxPoint x="1610" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xuzyZylhnx2wp8w7CgUG-57" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Envia comando para ativação" vertex="1">
+          <mxGeometry height="30" width="170" x="1240" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="xuzyZylhnx2wp8w7CgUG-59" edge="1" parent="1" source="xuzyZylhnx2wp8w7CgUG-47" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;defaultLabelBackgroundColor=page;" target="xuzyZylhnx2wp8w7CgUG-45" value="Confirma comando para ativar">
+          <mxGeometry relative="1" x="-0.5525" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1400" y="530" />
+            </Array>
+            <mxPoint x="1390.5" y="530" as="sourcePoint" />
+            <mxPoint x="1310.5" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xuzyZylhnx2wp8w7CgUG-60" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 6px;&quot;&gt;[Se a&amp;nbsp; temperattura é &amp;gt; 26Cº]&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="90" x="1410" y="440" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
