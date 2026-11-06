@@ -1,0 +1,238 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="OxRyWSTM7sx1G9PyMA3a">
+    <mxGraphModel dx="2352" dy="2729" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Kke1oUFIT18n7u66-vkD-1" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;fixedHeader=1;tableRender=collapsed;strokeColor=default;swimlaneFillColor=#a20025;fontColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="376" width="760" x="40" y="-934" as="geometry" />
+        </mxCell>
+        <mxCell id="Kke1oUFIT18n7u66-vkD-2" parent="Kke1oUFIT18n7u66-vkD-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" value="" vertex="1">
+          <mxGeometry height="78" width="760" as="geometry" />
+        </mxCell>
+        <mxCell id="Kke1oUFIT18n7u66-vkD-3" parent="Kke1oUFIT18n7u66-vkD-2" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=#6F0000;overflow=hidden;fillColor=light-dark(#A20025,#FF6666);pointerEvents=1;fontColor=#ffffff;" value="As a..." vertex="1">
+          <mxGeometry height="78" width="146" as="geometry">
+            <mxRectangle height="78" width="146" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kke1oUFIT18n7u66-vkD-4" parent="Kke1oUFIT18n7u66-vkD-2" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=#6F0000;overflow=hidden;fillColor=light-dark(#A20025,#FF6666);pointerEvents=1;fontColor=#ffffff;" value="I want to..." vertex="1">
+          <mxGeometry height="78" width="429" x="146" as="geometry">
+            <mxRectangle height="78" width="429" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kke1oUFIT18n7u66-vkD-5" parent="Kke1oUFIT18n7u66-vkD-2" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=#6F0000;overflow=hidden;fillColor=light-dark(#A20025,#FF6666);pointerEvents=1;fontColor=#ffffff;" value="So that...." vertex="1">
+          <mxGeometry height="78" width="185" x="575" as="geometry">
+            <mxRectangle height="78" width="185" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kke1oUFIT18n7u66-vkD-6" parent="Kke1oUFIT18n7u66-vkD-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" value="" vertex="1">
+          <mxGeometry height="62" width="760" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="Kke1oUFIT18n7u66-vkD-7" parent="Kke1oUFIT18n7u66-vkD-6" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=default;pointerEvents=1;" value="Quando chega a hora certa" vertex="1">
+          <mxGeometry height="62" width="146" as="geometry">
+            <mxRectangle height="62" width="146" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kke1oUFIT18n7u66-vkD-8" parent="Kke1oUFIT18n7u66-vkD-6" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=default;pointerEvents=1;" value="Quero que verifique se a porta está fechada" vertex="1">
+          <mxGeometry height="62" width="429" x="146" as="geometry">
+            <mxRectangle height="62" width="429" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kke1oUFIT18n7u66-vkD-9" parent="Kke1oUFIT18n7u66-vkD-6" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=default;pointerEvents=1;" value="Trancar a porta automáticamente" vertex="1">
+          <mxGeometry height="62" width="185" x="575" as="geometry">
+            <mxRectangle height="62" width="185" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kke1oUFIT18n7u66-vkD-10" parent="Kke1oUFIT18n7u66-vkD-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" value="" vertex="1">
+          <mxGeometry height="65" width="760" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Kke1oUFIT18n7u66-vkD-11" parent="Kke1oUFIT18n7u66-vkD-10" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=default;pointerEvents=1;" value="A partir de uma percentagem de luminosidade" vertex="1">
+          <mxGeometry height="65" width="146" as="geometry">
+            <mxRectangle height="65" width="146" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kke1oUFIT18n7u66-vkD-12" parent="Kke1oUFIT18n7u66-vkD-10" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=default;pointerEvents=1;" value="Quero que algo faça com que" vertex="1">
+          <mxGeometry height="65" width="429" x="146" as="geometry">
+            <mxRectangle height="65" width="429" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kke1oUFIT18n7u66-vkD-13" parent="Kke1oUFIT18n7u66-vkD-10" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=default;pointerEvents=1;" value="A luz seja apagada/acesa" vertex="1">
+          <mxGeometry height="65" width="185" x="575" as="geometry">
+            <mxRectangle height="65" width="185" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kke1oUFIT18n7u66-vkD-14" parent="Kke1oUFIT18n7u66-vkD-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" value="" vertex="1">
+          <mxGeometry height="57" width="760" y="205" as="geometry" />
+        </mxCell>
+        <mxCell id="Kke1oUFIT18n7u66-vkD-15" parent="Kke1oUFIT18n7u66-vkD-14" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=default;pointerEvents=1;" value="Caso esteja muito frio ou muito calor" vertex="1">
+          <mxGeometry height="57" width="146" as="geometry">
+            <mxRectangle height="57" width="146" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kke1oUFIT18n7u66-vkD-16" parent="Kke1oUFIT18n7u66-vkD-14" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=default;pointerEvents=1;" value="Algo no espaço meça a temperatura e a envie para o ar condiconado/aquecedor" vertex="1">
+          <mxGeometry height="57" width="429" x="146" as="geometry">
+            <mxRectangle height="57" width="429" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kke1oUFIT18n7u66-vkD-17" parent="Kke1oUFIT18n7u66-vkD-14" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=default;pointerEvents=1;" value="Então um dos 2 é ativado dependendo da temperatura" vertex="1">
+          <mxGeometry height="57" width="185" x="575" as="geometry">
+            <mxRectangle height="57" width="185" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kke1oUFIT18n7u66-vkD-37" parent="Kke1oUFIT18n7u66-vkD-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="57" width="760" y="262" as="geometry" />
+        </mxCell>
+        <mxCell id="Kke1oUFIT18n7u66-vkD-38" parent="Kke1oUFIT18n7u66-vkD-37" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=default;pointerEvents=1;" value="Depois que eu entrar em casa com o carro" vertex="1">
+          <mxGeometry height="57" width="146" as="geometry">
+            <mxRectangle height="57" width="146" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kke1oUFIT18n7u66-vkD-39" parent="Kke1oUFIT18n7u66-vkD-37" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=default;pointerEvents=1;" value="Que o portão seja automático para então" vertex="1">
+          <mxGeometry height="57" width="429" x="146" as="geometry">
+            <mxRectangle height="57" width="429" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kke1oUFIT18n7u66-vkD-40" parent="Kke1oUFIT18n7u66-vkD-37" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=default;pointerEvents=1;" value="Se feche por conta própria" vertex="1">
+          <mxGeometry height="57" width="185" x="575" as="geometry">
+            <mxRectangle height="57" width="185" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kke1oUFIT18n7u66-vkD-49" parent="Kke1oUFIT18n7u66-vkD-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="57" width="760" y="319" as="geometry" />
+        </mxCell>
+        <mxCell id="Kke1oUFIT18n7u66-vkD-50" parent="Kke1oUFIT18n7u66-vkD-49" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=default;pointerEvents=1;" value="Quando o lado de fora vai ficando mais escuro" vertex="1">
+          <mxGeometry height="57" width="146" as="geometry">
+            <mxRectangle height="57" width="146" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kke1oUFIT18n7u66-vkD-51" parent="Kke1oUFIT18n7u66-vkD-49" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=default;pointerEvents=1;" value="Que os estores sejam fechados" vertex="1">
+          <mxGeometry height="57" width="429" x="146" as="geometry">
+            <mxRectangle height="57" width="429" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kke1oUFIT18n7u66-vkD-52" parent="Kke1oUFIT18n7u66-vkD-49" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=default;pointerEvents=1;" vertex="1">
+          <mxGeometry height="57" width="185" x="575" as="geometry">
+            <mxRectangle height="57" width="185" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kke1oUFIT18n7u66-vkD-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#D80073,#CC0000);fillStyle=solid;fontColor=#ffffff;strokeColor=#A50040;" value="User story" vertex="1">
+          <mxGeometry height="40" width="760" x="40" y="-974" as="geometry" />
+        </mxCell>
+        <mxCell id="Kke1oUFIT18n7u66-vkD-19" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;fixedHeader=1;tableRender=collapsed;strokeColor=default;swimlaneFillColor=light-dark(#A20025,#6666FF);fontColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="402" width="760" x="40" y="-402" as="geometry" />
+        </mxCell>
+        <mxCell id="Kke1oUFIT18n7u66-vkD-20" parent="Kke1oUFIT18n7u66-vkD-19" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" value="" vertex="1">
+          <mxGeometry height="78" width="760" as="geometry" />
+        </mxCell>
+        <mxCell id="Kke1oUFIT18n7u66-vkD-21" parent="Kke1oUFIT18n7u66-vkD-20" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=light-dark(#6F0000, #ffffff);overflow=hidden;fillColor=light-dark(#A20025,#6666FF);pointerEvents=1;fontColor=#ffffff;" value="Given" vertex="1">
+          <mxGeometry height="78" width="146" as="geometry">
+            <mxRectangle height="78" width="146" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kke1oUFIT18n7u66-vkD-22" parent="Kke1oUFIT18n7u66-vkD-20" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=light-dark(#6F0000, #ffffff);overflow=hidden;fillColor=light-dark(#A20025,#6666FF);pointerEvents=1;fontColor=#ffffff;" value="When" vertex="1">
+          <mxGeometry height="78" width="429" x="146" as="geometry">
+            <mxRectangle height="78" width="429" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kke1oUFIT18n7u66-vkD-23" parent="Kke1oUFIT18n7u66-vkD-20" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=light-dark(#6F0000,#FFFFFF);overflow=hidden;fillColor=light-dark(#A20025,#6666FF);pointerEvents=1;fontColor=#ffffff;" value="Then" vertex="1">
+          <mxGeometry height="78" width="185" x="575" as="geometry">
+            <mxRectangle height="78" width="185" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kke1oUFIT18n7u66-vkD-24" parent="Kke1oUFIT18n7u66-vkD-19" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" value="" vertex="1">
+          <mxGeometry height="62" width="760" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="Kke1oUFIT18n7u66-vkD-25" parent="Kke1oUFIT18n7u66-vkD-24" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=default;pointerEvents=1;" value="O relógio solicita a hora" vertex="1">
+          <mxGeometry height="62" width="146" as="geometry">
+            <mxRectangle height="62" width="146" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kke1oUFIT18n7u66-vkD-26" parent="Kke1oUFIT18n7u66-vkD-24" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=default;pointerEvents=1;" value="Se a hora for para além das 22:00h, o ESP32 verifica se a porta está fechada, caso esteja envia um comando para a fechadura elétrica." vertex="1">
+          <mxGeometry height="62" width="429" x="146" as="geometry">
+            <mxRectangle height="62" width="429" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kke1oUFIT18n7u66-vkD-27" parent="Kke1oUFIT18n7u66-vkD-24" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=default;pointerEvents=1;" value="Se tudo ocorrer de acordo a fechadura elétrica tranca a porta" vertex="1">
+          <mxGeometry height="62" width="185" x="575" as="geometry">
+            <mxRectangle height="62" width="185" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kke1oUFIT18n7u66-vkD-28" parent="Kke1oUFIT18n7u66-vkD-19" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" value="" vertex="1">
+          <mxGeometry height="65" width="760" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Kke1oUFIT18n7u66-vkD-29" parent="Kke1oUFIT18n7u66-vkD-28" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=default;pointerEvents=1;" value="Se o percentual de luminosidade for &amp;lt;40%" vertex="1">
+          <mxGeometry height="65" width="146" as="geometry">
+            <mxRectangle height="65" width="146" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kke1oUFIT18n7u66-vkD-30" parent="Kke1oUFIT18n7u66-vkD-28" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=default;pointerEvents=1;" value="O ESP32 enviará um comando para o Módulo Réle fornecer alimentação para a lâmpada, caso o percentual de luminosidade não seja inferior ao valor atribuído a alimentação para a lâmpada é cortada." vertex="1">
+          <mxGeometry height="65" width="429" x="146" as="geometry">
+            <mxRectangle height="65" width="429" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kke1oUFIT18n7u66-vkD-31" parent="Kke1oUFIT18n7u66-vkD-28" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=default;pointerEvents=1;" value="Logo a lâmpada irá acender ou ficar apagada" vertex="1">
+          <mxGeometry height="65" width="185" x="575" as="geometry">
+            <mxRectangle height="65" width="185" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kke1oUFIT18n7u66-vkD-32" parent="Kke1oUFIT18n7u66-vkD-19" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" value="" vertex="1">
+          <mxGeometry height="57" width="760" y="205" as="geometry" />
+        </mxCell>
+        <mxCell id="Kke1oUFIT18n7u66-vkD-33" parent="Kke1oUFIT18n7u66-vkD-32" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=default;pointerEvents=1;" value="Caso a temperatura esteja &amp;lt;19Cº ou &amp;gt;26Cº" vertex="1">
+          <mxGeometry height="57" width="146" as="geometry">
+            <mxRectangle height="57" width="146" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kke1oUFIT18n7u66-vkD-34" parent="Kke1oUFIT18n7u66-vkD-32" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=default;pointerEvents=1;" value="O sensor de temperatura vai ler a temperatura do ambiente e dependendo do valor que o ESP32 receber enviará um comando para o ar condicionado ou aquecedor ou nenhum." vertex="1">
+          <mxGeometry height="57" width="429" x="146" as="geometry">
+            <mxRectangle height="57" width="429" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kke1oUFIT18n7u66-vkD-35" parent="Kke1oUFIT18n7u66-vkD-32" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=default;pointerEvents=1;" value="Resultará no aquecedor ou ar condicionado ser ativado ou até nenhum dos 2" vertex="1">
+          <mxGeometry height="57" width="185" x="575" as="geometry">
+            <mxRectangle height="57" width="185" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kke1oUFIT18n7u66-vkD-41" parent="Kke1oUFIT18n7u66-vkD-19" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="83" width="760" y="262" as="geometry" />
+        </mxCell>
+        <mxCell id="Kke1oUFIT18n7u66-vkD-42" parent="Kke1oUFIT18n7u66-vkD-41" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=default;pointerEvents=1;" value="O portão é aberto" vertex="1">
+          <mxGeometry height="83" width="146" as="geometry">
+            <mxRectangle height="83" width="146" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kke1oUFIT18n7u66-vkD-43" parent="Kke1oUFIT18n7u66-vkD-41" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=default;pointerEvents=1;" value="antes de enviar o comando para ser fechado, sensores verificarão se a rota para o portão não está obstruída, caso não tenha nenhum obstáculo." vertex="1">
+          <mxGeometry height="83" width="429" x="146" as="geometry">
+            <mxRectangle height="83" width="429" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kke1oUFIT18n7u66-vkD-44" parent="Kke1oUFIT18n7u66-vkD-41" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=default;pointerEvents=1;" value="O portão fechará sem problemas, caso contrário ficará aberto até o obstáculo ser removido" vertex="1">
+          <mxGeometry height="83" width="185" x="575" as="geometry">
+            <mxRectangle height="83" width="185" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kke1oUFIT18n7u66-vkD-45" parent="Kke1oUFIT18n7u66-vkD-19" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="57" width="760" y="345" as="geometry" />
+        </mxCell>
+        <mxCell id="Kke1oUFIT18n7u66-vkD-46" parent="Kke1oUFIT18n7u66-vkD-45" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=default;pointerEvents=1;" value="Quando fica escuro fora de casa" vertex="1">
+          <mxGeometry height="57" width="146" as="geometry">
+            <mxRectangle height="57" width="146" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kke1oUFIT18n7u66-vkD-47" parent="Kke1oUFIT18n7u66-vkD-45" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=default;pointerEvents=1;" value="O sensor que lê a luminosidade exterior envia um sinal para os motores de estores" vertex="1">
+          <mxGeometry height="57" width="429" x="146" as="geometry">
+            <mxRectangle height="57" width="429" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kke1oUFIT18n7u66-vkD-48" parent="Kke1oUFIT18n7u66-vkD-45" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=default;pointerEvents=1;" value="Os estores são fechados com o sinal que é enviado para os motores" vertex="1">
+          <mxGeometry height="57" width="185" x="575" as="geometry">
+            <mxRectangle height="57" width="185" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kke1oUFIT18n7u66-vkD-36" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#D80073,#3333FF);fillStyle=solid;fontColor=#ffffff;strokeColor=light-dark(#A50040,#0000CC);" value="Acceptnce Criteria" vertex="1">
+          <mxGeometry height="40" width="760" x="40" y="-442" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
